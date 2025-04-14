@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat+Alternates:wght@500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dela+Gothic+One&family=Montserrat+Alternates:wght@500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #DEDEDE;
+}
+
+body {
+    background-color: #040404;
+}
+
+.greeting-container {
+    background-image: url(Mask\ group.png);
+    background-size: cover;
+    height: 900px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.logo{
+    width: auto;
+}
+header ul {
+    display: flex;
+    gap: 130px;
+    align-items: center;
+    list-style: none;
+}
+
+header li {
+    transition: 0.2s;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #DEDEDE;
+    font-size: 14px;
+}
+
+.lending-group {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 6%;
+    width: 40%;
+}
+
+.lending-group h1,
+.appoiment-form h1 {
+    font-family: 'Cormorant Garamond';
+    font-weight: 300;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #DEDEDE;
+}
+
+.lending-group h2 {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    color: #CBC2AD;
+}
+
+.lending-group p,
+.left-txt p {
+    padding: 38px 0;
+    font-size: 20px;
+    color: #a7a7a7;
+}
+
+.btn-appointment {
+    width: 246px;
+    height: 40px;
+    background: rgba(203, 194, 173, 0.72);
+    border: none;
+    border-radius: 146px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.quotation {
+    text-align: center;
+    font-weight: 500;
+}
+
+.txt-q {
+    font-family: 'Cormorant Garamond';
+    font-size: 40px;
+    color: #CBC2AD;
+}
+
+.atr-q {
+    font-size: 24px;
+    color: #8D8D8D;
+}
+
+.aboutus {
+    margin: 7%;
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.txt-about {
+    width: 50%;
+    height: 500px;
+
+}
+
+.txt-about h2,
+.typesof h1 {
+    font-family: 'Montserrat Alternates';
+    font-weight: 500;
+    font-size: 40px;
+    color: #DEDEDE;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.txt-about p {
+    font-size: 20px;
+    color: #a7a7a7;
+}
+
+.img-about {
+    width: 50%;
+}
+
+.img-about img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutus::before {
+    content: url(Vector.svg);
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    left: -25%;
+}
+
+.type-card {
+    margin: 7%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#neo {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.right-img {
+    float: left;
+    width: 50%;
+}
+
+.left-txt {
+    float: right;
+    width: 40%;
+}
+
+.left-txt h2 {
+    font-family: 'Cormorant Garamond';
+    font-weight: 300;
+    font-size: 40px;
+    color: #CBC2AD;
+}
+
+.appoiment-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.appoiment-form form::after {
+    content: url(Vector.svg);
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    transform: rotate(-180deg);
+    object-fit: cover;
+    height: 500px;
+    overflow: hidden;
+}
+
+input[type=text],
+input[type=email] {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #4e4e4e;
+    width: 500px;
+    color: #4e4e4e;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+    background: none;
+    margin: 20px;
+}
+
+input[type=submit] {
+    border: none;
+    background-color: #4e4e4e;
+    border-radius: 25px;
+    width: 300px;
+    padding: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 40px;
+    transition: 0.3s;
+}
+
+#burger {
+    background: none;
+    border: none;
+    margin-right: 15px;
+
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    width: 30px;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.burger span {
+    height: 3px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+footer {
+    margin: 2% 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.img-footer {
+    width: 30%;
+}
+
+.img-footer img {
+    width: 100%;
+}
+
+.link-cntr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links-cntr1,
+.links-cntr2 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer a,
+footer p {
+    color: #a7a7a7;
+}
+
+.icons-links {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.btn-appointment:hover {
+    -webkit-box-shadow: 1px 0px 25px 10px rgba(203, 194, 173, 0.2);
+    -moz-box-shadow: 1px 0px 25px 10px rgba(203, 194, 173, 0.2);
+    box-shadow: 1px 0px 25px 10px rgba(203, 194, 173, 0.2);
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    -webkit-box-shadow: 1px 0px 25px 10px rgba(78, 78, 78, 0.2);
+    -moz-box-shadow: 1px 0px 25px 10px rgba(78, 78, 78, 0.2);
+    box-shadow: 1px 0px 25px 10px rgba(78, 78, 78, 0.2);
+    cursor: pointer;
+}
+
+input[type=submit]:active {
+    cursor: pointer;
+    scale: 0.95;
+    opacity: 0.7;
+}
+
+header li:hover {
+    transform: scale(1.05);
+}
+
+.link-cntr a {
+    transition: 0.2s;
+}
+
+.link-cntr a:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #CBC2AD;
+    margin: 15% auto;
+    padding: 50px;
+    max-width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modal-content h2 {
+    font-family: 'Cormorant Garamond';
+    font-weight: 300;
+    font-size: 40px;
+    color: #040404;
+}
+
+.modal-content p {
+    font-size: 20px;
+    color: #040404;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .links {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .links {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        z-index: 5;
+        transition: .1s all linear;
+        transform: translateX(-120%);
+
+    }
+
+    .links.open {
+        transform: translateX(0%);
+    }
+
+    .links.open li {
+        padding: 20px 100px;
+    }
+
+    .greeting-container {
+        height: 600px;
+    }
+
+    .lending-group p,
+    .left-txt p,
+    .txt-about p,
+    .atr-q {
+        font-size: 16px;
+    }
+
+    .lending-group h1,
+    .appoiment-form h1,
+    .lending-group h2 {
+        font-size: 48px;
+    }
+
+    .lending-group {
+        height: auto;
+        width: 45%;
+    }
+
+    .btn-appointment {
+        width: 170px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .txt-about h2,
+    .typesof h1,
+    .txt-q,
+    .left-txt h2 {
+        font-size: 30px;
+    }
+    .txt-about {
+        height: auto;
+    }
+    
+    .type-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-txt {
+        width: auto;
+    }
+
+    #neo {
+        flex-direction: column;
+    }
+
+    .appoiment-form form::after {
+        scale: 0.7;
+        top: -18%;
+    }
+
+    input[type=text],
+    input[type=email] {
+        width: 400px;
+        font-size: 16px; 
+        margin: 10px;   
+    }
+
+    input[type=submit] {
+        width: 250px;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    footer a,
+    footer p {
+        font-size: 12px;
+    }
+
+    footer {
+        gap: 10px;
+    }
+    .modal-content h2 {
+        font-size: 30px;
+    }
+    
+    .modal-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:426px){
+    .appoiment-form form::after,
+    .aboutus::before{
+        scale: 0;
+    }
+    .links{
+        font-size: 14px;
+    }
+    .logo{
+        width: 150px;
+    }
+    header a{
+        font-size: 12px;
+    }
+    .links.open li {
+        padding: 20px 50px;
+    }
+    .greeting-container {
+        background-size: cover;
+        height: calc(auto - 600px);
+    }
+    .lending-group{
+        width: auto;
+        right: 0;
+        margin: 7%;
+        position: static;
+        height: 500px;
+    }
+    .txt-about h2{
+        padding-top: 5%;
+    }
+    .lending-group p,
+    .left-txt p,
+    .txt-about p,
+    .atr-q {
+        font-size: 14px;
+    }
+
+    .lending-group h1,
+    .appoiment-form h1,
+    .lending-group h2 {
+        font-size: 32px;
+    }
+
+    .btn-appointment {
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .txt-about h2,
+    .typesof h1,
+    .txt-q,
+    .left-txt h2 {
+        font-size: 24px;
+    }
+    .aboutus{
+        flex-direction: column;
+    }
+    .txt-about{
+        width: auto;
+        height: auto;
+    }
+    .img-about{
+        width: 100%;
+    }
+    .type-card img{
+        width: 200px;
+    }
+    .left-txt p{
+        padding: 15px 0;
+    }
+    footer a,
+    footer p {
+        font-size: 10px;
+    }
+    .img-footer{
+        scale: 0;
+    }
+    .icons-links img{
+        width: 30px;
+    }
+    footer{
+        margin: 7%;
+    }
+    .appoiment-form h1{
+        text-align: center;
+    }
+    input[type=text], input[type=email] {
+        border-bottom: 2px solid #4e4e4e;
+        width: 300px;
+        font-size: 14px;
+        margin: 10px;
+    }
+    input[type=submit] {
+        width: 200px;
+        padding: 10px;
+        font-size: 10px;
+    }
+    .modal-content h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .modal-content p {
+        font-size: 14px;
+    }
+}

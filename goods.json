@@ -1,0 +1,56 @@
+{
+    "modern": {
+        "image": "images/mod1.png",
+        "name": "Мария Самойлова",
+        "expensive": "Преподает 6 лет",
+        "type": "Модерн"
+    },
+    "contemp": {
+        "image": "images/aii2.png",
+        "name": "Вероника Шварц",
+        "expensive": "Преподает 5 лет",
+        "type": "Контемпорари"
+    },
+    "vogue": {
+        "image": "images/cont1.png",
+        "name": "Даяна Поднебесных",
+        "expensive": "Преподает 2 Года",
+        "type": "Vogue"
+    },
+    "hiphop": {
+        "image": "images/mod2.png",
+        "name": "Виктор Самойлов",
+        "expensive": "Преподает 6 лет",
+        "type": "Уличные танцы"
+    },
+    "baletm1": {
+        "image": "images/baal1.png",
+        "name": "Екатерина Вайрих",
+        "expensive": "Преподает 7 лет",
+        "type": "Балет(Младшая группа)"
+    },
+    "baletm2": {
+        "image": "images/baal11.png",
+        "name": "Анастасия Бурунова",
+        "expensive": "Преподает 10 лет",
+        "type": "Балет(Младшая группа)"
+    },
+    "balets": {
+        "image": "images/ball56.png",
+        "name": "Марина Прилучная",
+        "expensive": "Преподает 1 год",
+        "type": "Балет(Средняя группа)"
+    },
+    "baletst": {
+        "image": "images/ball1.png",
+        "name": "Алина Махина",
+        "expensive": "Преподает 4 Года",
+        "type": "Балет(Старшая группа)"
+    },
+    "bal": {
+        "image": "images/moii1.png",
+        "name": "Валерия и Кирилл Милявские",
+        "expensive": "Преподают 4 года",
+        "type": "Вальс и Свадебные танцы"
+    }
+}
