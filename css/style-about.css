@@ -406,7 +406,10 @@ header li:hover {
 }
 
 @media (max-width:426px) {
-
+    .lending-img::after,
+    .vector::before {
+        scale: 0;
+    }
     .appoiment-form form::after,
     .aboutus::before {
         scale: 0;
